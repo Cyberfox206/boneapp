@@ -89,20 +89,32 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nos_abonnements {
+    width: 80%;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-table {
-    width: 90%;
+#nos_abonnements h2 {
+    margin: 15px;
+    font-size: 1.2em;
     text-align: center;
-    margin-bottom: 30px;
     font-family: var(--font-1);
-    border: 5px double var(--color-6);
+    text-transform: uppercase;
+}
+
+table {
+    text-align: center;
+    border: double 5px var(--color-6);
 }
 
 table thead tr th {
-    color: white;
     background-color: var(--color-2);
 }
 
@@ -111,20 +123,42 @@ table tbody tr td {
 }
 
 table tfoot tr td {
-    color: white;
     background-color: var(--color-2);
 }
 
-main section {
+#section_plat_a_la_carte {
     width: 90%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
-main section h2 {
+#section_plat_a_la_carte article {
+    width: 100%;
+    height: 20%;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: var(--color-3);
+}
+
+#section_plat_a_la_carte h2 {
+    font-size: 1.2em;
+    margin: 15px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-1);
+}
+
+#section_plat_a_la_carte article img {
+    width: 25%;
+    float: left;
+    border-radius: 15px;
+}
+
+
+#section_plat_a_la_carte article h3 {
     font-size: 1em;
-    margin-bottom: 10px;
     text-transform: uppercase;
     font-family: var(--font-1);
 }
@@ -138,39 +172,43 @@ main div {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-image: url(img/img-12.jpg);
 }
 
 #section_blog {
-    width: 85%;
+    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-#section_blog article {
-    width: 100%;
-    margin: 10px;
-    box-shadow: 5px 5px 15px 5px #BFC0C0;
-}
-
-#section_blog article h3 {
+#section_blog h2 {
+    font-size: 1.2em;
+    margin: 15px 0px;
     text-align: center;
     text-transform: uppercase;
     font-family: var(--font-1);
-    font-size: 1em;
-    margin: 15px;
 }
 
-#section_blog article p {
+#section_blog article {
+    width: 100%;
+    display: flex;
+    margin: 15px 0px;
     text-align: center;
-    font-family: var(--font-1);
-    font-size: 0.7em;
-    margin-bottom: 15px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 6px 6px 15px 5px #BFC0C0;
 }
 
 #section_blog article img {
     width: 100%;
+}
+
+#section_blog article h3 {
+    font-size: 1.2em;
+    margin: 10px;
+    font-family: var(--font-1);
+    text-transform: uppercase;
 }

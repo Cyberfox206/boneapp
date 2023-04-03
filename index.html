@@ -130,9 +130,11 @@
   <footer>
     <h2>formulaire de contact</h2>
     <p>pour plus de details vous pouvez consultez notre site ici</p>
-    <form action="">
+    <form action="submit">
+
+      <h2>information de contact</h2>
       <fieldset>
-        <legend>information de contact</legend>
+        <legend>quel est votre age ? </legend>
         <div>
           <input type="radio" name="age" value="12-14" id="12-14">
           <label for="12-14">12-14</label>
@@ -146,12 +148,40 @@
           <label for="18-19">18-19</label>
         </div>
       </fieldset>
+
       <div>
-        <label aria-required="true" for="mail">mail:</label>
-        <input type="email" name="mail">
+        <label for="mail">mail:</label>
+        <input aria-required="true" type="email" id="mail">
         <label for="nom">nom</label>
-        <input aria-required="true" type="text">
+        <input aria-required="true" type="text" id="nom">
       </div>
+
+      <h3>votre jeu prefere</h3>
+      <div>
+        <label for="console">choisisez une console:</label>
+        <select name="console" id="console">
+          <option value="">--choisisez une console</option>
+          <option value="1">XboxOne</option>
+          <option value="2">PS4</option>
+          <option value="3">XboxOneS</option>
+          <option value="4">PS3</option>
+        </select>
+
+        <label for="jeu">choisisez une jeu:</label>
+        <select name="jeu" id="jeu">
+          <option value="">--choisisez une jeu</option>
+          <option value="1">Zadventure</option>
+          <option value="2">Neir</option>
+          <option value="3">GTA5</option>
+          <option value="4">Sheep master</option>
+        </select>
+      </div>
+
+      <h4>votre message</h4>
+      <textarea name="cryptext" id="textcrypt" cols="30" rows="10"></textarea>
+      <label for=""></label>
+      <input type="" id="">
+      <button></button>
     </form>
   </footer>
 </body>
